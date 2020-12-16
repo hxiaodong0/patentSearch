@@ -94,7 +94,7 @@ def main(USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537
     results = {}
     file = pd.ExcelFile('Relavo_patent_search_keywords.xlsx')
     print("Loading file successful, the sheets names are: ", file.sheet_names) # to view the sheets name
-    df = file.parse("All_search results sheet") # make a dataframe from the "All_search results sheet"  "retraction; syringe"
+    df = file.parse("All_search_results") # make a dataframe from the "All_search results sheet"  "retraction; syringe"
     res = df["result link"]#'result link'
     len = res.__len__()
     weights_relavo = get_weights()
