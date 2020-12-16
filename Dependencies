@@ -1,0 +1,10 @@
+string
+nltk
+gensim
+numpy
+nltk.tokenize
+bs4
+requests
+pandas as pd
+tqdm
+time
